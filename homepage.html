@@ -157,7 +157,7 @@
                         Accomplishments</h1>
                     <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 
                         dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                        style="margin-bottom: 20px;">Add</button>
+                        style="margin-bottom: 20px;" onclick="">Add</button>
                     <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 
                         dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                         style="margin-bottom: 20px;">Print</button>
@@ -165,62 +165,21 @@
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" class="px-6 py-3">
-                                    Date
+                                    No
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Tasks Done
+                                    Date Created
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Action
+                                    Tasks
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Users ID
                                 </th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope="row"
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    2023-12-05
-                                </th>
-                                <td class="px-6 py-4">
-                                    Attended a Meeting
-                                </td>
-                                <td class="flex items-center px-6 py-4">
-                                    <a href="#"
-                                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                    <a href="#"
-                                        class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope="row"
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    2023-12-05
-                                </th>
-                                <td class="px-6 py-4">
-                                    Compiled the Files
-                                </td>
-                                <td class="flex items-center px-6 py-4">
-                                    <a href="#"
-                                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                    <a href="#"
-                                        class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
-                                </td>
-                            </tr>
-                            <tr class="bg-white dark:bg-gray-800">
-                                <th scope="row"
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    2023-12-05
-                                </th>
-                                <td class="px-6 py-4">
-                                    Checked the Database
-                                </td>
-                                <td class="flex items-center px-6 py-4">
-                                    <a href="#"
-                                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                    <a href="#"
-                                        class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
-                                </td>
-                            </tr>
+                        <tbody id="data-output">
+                            
                         </tbody>
                     </table>
                 </div>
@@ -228,6 +187,8 @@
             </div>
         </div>
     </div>
+
+    <script src="acc_script.js"></script>
 
 </body>
 
